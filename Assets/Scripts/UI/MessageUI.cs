@@ -8,8 +8,8 @@ public class MessageUI : MonoBehaviour
 {
     [SerializeField] private float _alphaSpeed = 1.5f;
 
-    private Text _text = null;
-    private Outline _outline = null;
+    [SerializeField, HideInInspector] private Text _text = null;
+    [SerializeField, HideInInspector] private Outline _outline = null;
 
     private CancellationTokenSource _normal = null;
 

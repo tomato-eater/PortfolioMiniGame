@@ -56,6 +56,11 @@ MonoBehaviour:
   _defaultPositionX: -1.8
   _jumpPower: 5
   _returnSpeed: 50
+  _warmingAnimator: {fileID: 22100000, guid: c711bdab11ea64a22b9b76048fccf0c4, type: 2}
+  _runAnimator: {fileID: 22100000, guid: ba97e5056bd404cb9b358ebe4178d0c0, type: 2}
+  _animator: {fileID: 7209223015764919866}
+  _spriteRenderer: {fileID: 9043883852473170804}
+  _rigidbody2D: {fileID: 1826179270838623932}
 --- !u!212 &9043883852473170804
 SpriteRenderer:
   serializedVersion: 2
@@ -125,7 +130,7 @@ Animator:
   m_GameObject: {fileID: 2607504402405027228}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 22100000, guid: ba97e5056bd404cb9b358ebe4178d0c0, type: 2}
+  m_Controller: {fileID: 22100000, guid: c711bdab11ea64a22b9b76048fccf0c4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

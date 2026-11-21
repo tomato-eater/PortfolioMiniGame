@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(PlayerInput))]
 public class InputManager : MonoBehaviour
 {
-    private PlayerInput _playerInput = null;
+    [SerializeField, HideInInspector] private PlayerInput _playerInput = null;
     private InputAction _jumpAction = null;
 
     private void OnValidate()

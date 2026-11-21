@@ -4,7 +4,7 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Text))]
 public class PointMagnificationUI : MonoBehaviour
 {
-    private Text _text = null;
+    [SerializeField, HideInInspector] private Text _text = null;
 
     private void OnValidate()
     {

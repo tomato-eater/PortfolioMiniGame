@@ -16,9 +16,9 @@ public class Player : MonoBehaviour
     [SerializeField] private AnimatorOverrideController _warmingAnimator = null;
     [SerializeField] private AnimatorOverrideController _runAnimator = null;
 
-    private Animator _animator = null;
-    private SpriteRenderer _spriteRenderer = null;
-    private Rigidbody2D _rigidbody2D = null;
+    [SerializeField, HideInInspector] private Animator _animator = null;
+    [SerializeField, HideInInspector] private SpriteRenderer _spriteRenderer = null;
+    [SerializeField, HideInInspector] private Rigidbody2D _rigidbody2D = null;
 
     private bool _canAirJump = true;
 

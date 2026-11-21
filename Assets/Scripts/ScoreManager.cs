@@ -27,13 +27,17 @@ public class ScoreManager : MonoBehaviour
     /// <summary>
     /// ポイントをスコアに足す
     /// </summary>
-    /// <param name="addPoint">足したい値</param>
-    public void AddScore(int addPoint)
+    /// <param name="addScore">足したい値</param>
+    public void AddScore(int addScore)
     {
-        Score += (int)(addPoint * _scoreMag);
+        Score += (int)(addScore * _scoreMag);
         UIManager.Instance.ScoreUI.ChangeScore(Score);
     }
 
+    /// <summary>
+    /// 倍率を上げる
+    /// </summary>
+    /// <param name="mag">足したい値</param>
     public void AddMag(float  mag)
     {
         _scoreMag += mag;

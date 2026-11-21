@@ -1,4 +1,6 @@
 using System;
+using System.Diagnostics;
+using UnityEngine;
 
 /// <summary>
 /// Pointの取得倍率を表す指示用のクラス
@@ -16,7 +18,6 @@ public class PointMagnificationUIManager
     /// <param name="magnification">floatのまま渡す</param>
     public void ChangeMagnification(float magnification)
     {
-        int mag = (int)magnification * 100;
-        PointMagnificationEvent?.Invoke(mag);
+        PointMagnificationEvent?.Invoke(Mathf.RoundToInt(magnification * 100.0f));
     }
 }

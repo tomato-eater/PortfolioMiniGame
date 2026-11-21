@@ -150,7 +150,9 @@ public class GameManager : MonoBehaviour
         
         _scoreToken?.Cancel();
         _scoreToken?.Dispose();
-        _scoreToken = null; 
+        _scoreToken = null;
+
+        Debug.Log("あなたは死んだ!");
     }
 
     async UniTask AddTimeScore()
